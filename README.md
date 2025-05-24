@@ -69,4 +69,4 @@ Open an issue! I'm actively maintaining the project and happy to consider useful
 
 ## Benchmarks
 
-Not a lot here yet. Normalizing [Dolma](https://huggingface.co/datasets/allenai/dolma/)'s `cc_en_middle-0577.json.gz` (1.7M documents) takes ~96.68 seconds, with a time per document of 56 microseconds.
+Not a lot here yet. Normalizing [Dolma](https://huggingface.co/datasets/allenai/dolma/)'s `cc_en_middle-0577.json.gz` (1.7M documents) takes ~96.68 seconds with 16 workers and AVX2 capability, with a time per document of 56 microseconds.
