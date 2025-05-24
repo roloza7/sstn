@@ -1,0 +1,25 @@
+[package]
+name = "sstn"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "sstn"
+crate-type = ["cdylib"]
+
+[dependencies]
+clap = { version = "4.5.38", features = ["derive"] }
+deunicode = "1.6.2"
+flate2 = { version = "1.1.1", features = ["zlib-rs"] }
+phf = { version = "0.11.3", features = ["macros"] }
+pyo3 = "0.25.0"
+rayon = "1.10.0"
+rust-stemmers = "1.2.0"
+simd-json = "0.15.1"
+unidecode = "0.3.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = 'abort'
