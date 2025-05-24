@@ -3,7 +3,7 @@ Super Simple Text Normalizer — a fast, lightweight text normalization tool des
 
 This project was designed for performance in very large datasets, so there is a bias towards lightweight transformations. If there is something you need, open an issue!
 
-##Features
+## Features
 
 ✅ Unicode to ASCII conversion
 
