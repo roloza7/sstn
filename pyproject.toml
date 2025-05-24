@@ -1,9 +1,9 @@
 [project]
 name = "sstn"
 version = "0.1.0"
-description = "A Python project."
+description = "Super Simple Text Normalizer"
 authors = [
-    { name="Your Name", email="your.email@example.com" }
+    { name="Rodrigo Loza", email="roloza7@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.8"
