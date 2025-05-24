@@ -1,6 +1,6 @@
 import os
 from typing import Union
-from sstn import __normalize_text, __normalize_jsonl_file
+from sstn._norm import __normalize_text, __normalize_jsonl_file
 
 def normalize_text(
     text : str,
@@ -64,17 +64,3 @@ def normalize_jsonl_files(
     
     for path in paths:
         __normalize_jsonl_file(path, path_map[path], text_column, workers)
-
-if __name__ == "__main__":
-    import time
-
-
-    start = time.time()
-    normalize_jsonl_file(
-        "dolma-0991.json.gz",
-        "dolma-0991-norm.jsonl.gz",
-        text_column="text",
-        workers=16,
-    )
-    end = time.time()
-    print(f"Time taken: {end - start} seconds")

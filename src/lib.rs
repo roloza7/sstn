@@ -83,7 +83,8 @@ fn __normalize_jsonl_file(
 
 
 #[pymodule]
-fn sstn(m: &Bound<'_, PyModule>) -> PyResult<()> {
+#[pyo3(name = "_norm")]
+fn register_module(m: &Bound<'_, PyModule>) -> PyResult<()> {
     // Add the normalize_text function to the module
     m.add_function(wrap_pyfunction!(__normalize_text, m)?)?;
     m.add_function(wrap_pyfunction!(__normalize_jsonl_file, m)?)?;
