@@ -1,5 +1,7 @@
 ## Super Simple Text Normalizer
-Super Simple Text Normalizer — a fast, lightweight text normalization tool designed for preprocessing text in NLP and IR pipelines. sstn applies a minimal, efficient set of transformations to bring raw text into a consistent format, leveraging SIMD acceleration where possible.
+Super Simple Text Normalizer — a fast, lightweight text normalization tool designed for preprocessing text in NLP pipelines. sstn applies a minimal, efficient set of transformations to bring raw text into a consistent format, leveraging SIMD acceleration where possible.
+
+This project was designed for performance in very large datasets, so there is a bias towards lightweight transformations. If there is something you need, open an issue!
 
 Features
 ✅ Unicode to ASCII conversion
