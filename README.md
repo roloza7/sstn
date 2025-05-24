@@ -1,2 +1,2 @@
-# sstn
-Stupid Simple Text Normalizer
+# sstn 
+Super Simple Text Normalizer
